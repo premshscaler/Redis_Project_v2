@@ -43,12 +43,15 @@ Base path: `/leaderboard`
 | POST | `?action=hset&id=<key>&field=<f>&val=<v>` | Set hash field |
 
 ## Run Locally
-
+# Terminal 1 
 ```bash
 # Backend (port 8080)
 javac *.java
 java Server
+```
 
+# Terminal 2 
+```bash
 # Frontend (in another terminal)
 pip install streamlit requests
 streamlit run app.py
